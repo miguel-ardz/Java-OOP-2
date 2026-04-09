@@ -1,7 +1,6 @@
-/*
-Solution demonstrating composition, aggregation, and association in Java.
-How a Toyota class extends Car and incorporates ToyotaEngine instances.
-*/
+// Miguel Rodriguez
+// Solution demonstrating composition, aggregation, and association in Java.
+// How a Toyota class extends Car and incorporates ToyotaEngine instances.
 
 class Car {
     private int id;
