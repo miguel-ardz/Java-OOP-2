@@ -1,4 +1,3 @@
-// Miguel Rodriguez
 // Solution demonstrating composition, aggregation, and association in Java.
 // How a Toyota class extends Car and incorporates ToyotaEngine instances.
 
@@ -19,17 +18,29 @@ class Car {
         this.color = color;
     }
 
-    public void setID(int new_id) { id = new_id; }
+    public void setID(int new_id) { 
+        id = new_id;
+    }
 
-    public void setModel(String new_model) { model = new_model; }
+    public void setModel(String new_model) { 
+        model = new_model;
+    }
 
-    public void setColor(String new_color) { color = new_color; }
+    public void setColor(String new_color) { 
+        color = new_color;
+    }
 
-    public int getId() { return id; }
+    public int getId() { 
+        return id;
+    }
 
-    public String getModel() { return model; }
+    public String getModel() { 
+        return model;
+    }
 
-    public String getColor() { return color; }
+    public String getColor() { 
+        return color;
+    }
 
     @Override
     public String toString() {
@@ -39,7 +50,6 @@ class Car {
 
         return result;
     }
-
 }
 
 class Toyota extends Car {
@@ -50,9 +60,13 @@ class Toyota extends Car {
         this.engine = engine;
     }
 
-    public void setEngine(ToyotaEngine new_engine) { engine = new_engine; }
+    public void setEngine(ToyotaEngine new_engine) {
+        engine = new_engine;
+    }
 
-    public ToyotaEngine getEngine() { return engine; }
+    public ToyotaEngine getEngine() {
+        return engine;
+    }
 
     public void setStart() {
         engine.start();
@@ -64,7 +78,6 @@ class Toyota extends Car {
         result += "\nEngine: Toyota Engine";
         return result;
     }
-
 }
 
 class ToyotaEngine {
@@ -81,7 +94,6 @@ class ToyotaEngine {
     public String toString() {
         return "ZX500 Engine";
     }
-
 }
 
 class Main {
@@ -93,5 +105,4 @@ class Main {
         System.out.println(toyota);
         System.out.println(toyota.getEngine());
     } // end of main
-
 }
