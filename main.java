@@ -75,7 +75,7 @@ class Toyota extends Car {
 
     @Override
     public String toString() {
-        String result = super.toString(); // use THIS object's car data
+        String result = super.toString();
         result += "\nEngine: Toyota Engine";
         return result;
     }
@@ -98,7 +98,6 @@ class ToyotaEngine {
 }
 
 class Main {
-
     public static void main(String[] args) {
         ToyotaEngine engine = new ToyotaEngine();
         Toyota toyota = new Toyota(89683, "Camry", "Blue", engine);
